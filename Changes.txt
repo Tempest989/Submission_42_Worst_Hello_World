@@ -1,0 +1,63 @@
+Pokemon:
+BLissey (soft boiled,thunderbolt,ice beam, light screen)
+shedinja (maybe change moves?)
+Dracovish (already fine, maybe give move other than brine?)
+lapras (all good, maybe change moves, change rest to protect)
+gyarados (ice fang, aqua tail, earthquake, dragon dance)
+snorlax (return, rest, sleep talk, earthquake)
+add more pokemon....
+
+gengar (protect, shadow ball, sludge bomb, destiny bond)
+Corviknight (iron head, brave bird, drill peck, roost)
+braviery (hone claws, roost, brave bird, return)
+
+Steven Changes:
+Update AI to always go for kills when they see it
+Update AI so it only damage calcs multiplier of power dmg, not actual damage output
+Fix Switch so only done if opponent is 2X or more effectiveness in typing, unless low on hp then sack it
+Switch cradily or someone else for dragonite (changed to add dragonite as boss at the end if there is time)
+Change it so he uses items, not sure if he ever has so make sure he can
+
+Overall Changes:
+Update so earthquake hits dugged player for 2X damage
+Implement all moves for new pokemon
+Once done, tidy up code for stuff that is not required for all the implemented pokemon (if enough time, probs not, maybe only all the extra moves if there is a lot left unused)
+Implement natures to pokemon and add ev/iv to player pokemon upon creation (need to decide how many to add)
+make UI look smoother and spaced out more
+Fix some bugs (if possible, fine if buggy since adds to the charm)
+
+
+whats left: 
+abilities new pokemon (done)
+make ui better (spacing of stuff, change enemy mentions to Steven since he IS the enemy DUH)
+bug test (oh fuck me sideways)
+add natures? depends on balancing side of things and time of course (no time, player already op af)
+update players stuff (items less like enemy....... or ITEMLESS!!! (IM AN AKUMA))
+
+DESTINY BOND FORGOT TO IMPLEMENT!!! (should be good)
+Fix recoil not based of damage power only damage dealt  (should work)
+fix protect, goes on 1 turn too long (looks fine?)
+sleep talk doesn't work through sleep  (should work, not an elegant solution at all)
+need to put text for can't attack through sleep (???)
+put text for when steven heals  (done and done)
+had weird bug of hyper potion healing 50 odd (wack) (see if it pops up again)
+skarymary spikes are not working, only using spikes  (if ive got time ill check it out)
+spikes do not work at all, maybe cause of 0,1,3, thing amke 3 to 3+ (^^^)
+confuse check needs to be after first attack is done, incase confuse is done first turn  (should be fixed hopefully)
+move check stats of pokemon option to after everything is displayed  (should be all G)
+mix up who starts for steven  (should be all g)
+edit players items/pokemon they can have (done items, teams should be done too)
+make players name pop up more instead of player  (if time once its all set up)
+roost should error when being used at full hp, like all other hp increase moves, implement that  (should be all g)
+
+say when dead to confusion, do not get turn if died, implement confusion timer (pretty sure its all g now with the above confuse fix)
+
+
+sleep talk does not work need to fix
+roost is op as shit, acts as protect since damage no work at all
+
+
+include flinch if time if not its all g
+flinch and sleep talk left, confuse ray is dodgy but that fine, adds to the charm in my opinion
+also has crashed once, no idea y has not crashed since idk, good luck?
+
