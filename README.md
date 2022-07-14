@@ -1,27 +1,32 @@
-About this thing?:
+# Submission for 42 Worst Hello World Competition
+This Project was my Submission for the 42 Worst Hello World Competition, which was about creating the worst way possible to print "Hello World" to the user.  
+The Method I choose was to make the user complete 3 games back to back in a gaunlet format, where if the user beats the game with certain conditions, then "Hello World" will be printed to terminal.  
+This was written in C++.
 
-Basically is 3 games run in a gaunlet format, bet all 3 in a row, you win, and then hopefully hello world is printed of course.
+## The 3 Games
+1. Rock, Paper, Scissors.
+2. BlackJack.
+3. Pokemon Battle Simulator.
 
-all the games should be smooth and not many bugs, the last game (3rd one) might have a few hiccups maybe but should be alright, only had it crash once out of about 30 test runs
+## Makefile Utility
+- `make` and `make Gaunlet` will compile the Gaunlet part of the Project into the executable `gaunlet`.
+- `make RPS` will compile the Rock, Paper, Scissors part of the Project into its own, standalone game, as the executable `rps`. 
+- `make BlackJack` will compile the BlackJack part of the Project into its own, standalone game, as the executable `blackjack`.
+- `make Poke` will compile the Pokemon part of the Project into its own, standalone game, as the executable `poke`.
+- `make clean` will delete, if possible, the executables `gaunlet`, `rps`, `blackjack` and `poke`.
+- `make compile` will run `make Gaunlet`, `make RPS`, `make BlackJack` and `make Poke`.
 
-WARNING: If this is run through an actual linux computer terminal, whether its a proper linux computer or a virtualbox, it should work fine
-BUT if its not, then I cannot guarentee this will run, as in my personal experiences, sometimes the terminal conks out in online IDE or environments
-it could have just been the one I was using (which was CS50 IDE by the way), but the point still stands.
-
-If there are any major progression bugs that do not work, checked Gaunlet.cpp and Controller.cpp since they are the progession pieces, if its specially game related,
-whether its results or something look through the specific game files, which are all listed in the "Makefile", with each sort into games
-
-
-HOW TO RUN IT:
-Type "make" into the terminal and it should compile without errors, hopefully.
-
-Then if you wish to run the gaunlet, type "./gaunlet" to get started 
-if U wish to play the other games seperately of the gaunlet, each of they call executions are lited in the "Makefile" by typing "./" and then the word written after the "-o" in the Makefile
-
-If you have any further questions or major bugs that need fixing, feel free to throw me a message on Discord @Kocatwo and thanks for Playing this, thing?
-
-
-TESTING:
-
-Each of the games has been exhaustively tested and work fine on their own without many, if any, bugs
-but due to time constraints running the whole thing was not tested much so some connecting bugs of the games may occur, sorry ran out to time to do most of this in 4 days.
+## Known Bugs / Issues
+- BlackJack, the Hidden Objective can be achieved early than it should be, due to the checks for if the Hidden Objective has been passed correctly not being accurate enough.
+- Pokemon, any stat increasing move will update the wrong stat, so for example, an ATK buff will actually buff DEF.
+- Pokemon, Frozen Pokemon can still attack / move on the turn that they were Frozen.
+- Pokemon, needs more in-depth explanations of what going on for some moves, Giga Impact being an example.
+- Pokemon, have yet to test if the Confusion status effect and Sleep Talk work correctly.   
+  
+If there are any major progression bugs, checked Gaunlet.cpp and Controller.cpp since they are the progession files, if its specially game related,
+such as results and playing the games, then look through the specific game files, which are all listed in the "Makefile" under the appropiate rule for each game.
+## How To Run
+- `./gaunlet` will run the Gaunlet part of the Project.
+- `./rps` will run the Rock, Paper, Scissors part of the Project.
+- `./blackjack` will run the BlackJack part of the Project.
+- `./poke` will run the Pokemon part of the Project.
